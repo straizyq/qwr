@@ -1,0 +1,39 @@
+.btn_auth {
+    background: linear-gradient(95.37deg, #21D084 -0.37%, #4AB3F4 100.81%);
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 39px 228px;
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 3;
+    margin-top: 39px;
+}
+
+.btn_auth::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(95.37deg, #21D084 -0.37%, #4AB3F4 100.81%);
+    filter: blur(20px);
+    opacity: 1;
+    z-index: -1;
+}
+
+.btn_auth:hover {
+    scale: 1.1;
+}
+
+.btn_auth:active {
+    scale: 0.85;
+}
+
+.register-window h2 {
+ font-size: 64px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абонементы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/abonent.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu_logo">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <nav class="menu_links">
+                <a href="index.html" class="menu_link">Главная</a>
+                <a href="auth.html" class="menu_link">Фото зала</a>
+                <a href="auth.html" class="menu_link">Контакты</a>
+                <a href="uslugi.html" class="menu_link">Доп услуги</a>
+                <a href="" class="menu_link">Отзывы</a>
+            </nav>
+            <div class="menu_right">
+                <a href="profile.html" class="menu_link">Профиль</a>
+                <button class="btn">Стать членом клуба</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="abonents">
+            <div class="container">
+                <h2 class="abonents_title">Абонементы в <span>ZK GYM</span></h2>
+                <div class="subscriptions">
+                    <div class="subscription">
+                        <h2>Базовый минимум</h2>
+                        <ul>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Одно бесплатное посещение</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Тренировка с тренером</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Одно групповое занятие</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">SPA-зона с сауной</li>
+                        </ul>
+
+                        <p class="price price_1">Стоимость: <span>БЕСПЛАТНО</span></p>
+                        <button class="btn_abon btn_1">Попробовать</button>
+                    </div>
+
+                    <div class="subscription">
+                        <h2>Средний среднячок</h2>
+                        <ul>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Безлимитное посещение на
+                                протяжении 6 месяцев</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Регулярные занятия с тренером
+                            </li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Групповые занятия</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">SPA-зона с сауной</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Скидка на доп услуги 5%</li>
+                        </ul>
+
+                        <p class="price">Стоимость: <span>8999р</span></p>
+                        <button class="btn_abon btn_2">Приобрести</button>
+                    </div>
+
+                    <div class="subscription">
+                        <h2>Роскошный максимум</h2>
+                        <ul>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Безлимитное посещение на
+                                протяжении 12 месяцев</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Регулярные занятия с тренером
+                            </li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Групповые занятия</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">SPA-зона с сауной</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Скидка на доп услуги 15%</li>
+                        </ul>
+
+                        <p class="price">Стоимость: <span>20999р</span></p>
+                        <button class="btn_abon btn_2">Приобрести</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="container">
+                <div class="consultation_block">
+                    <h2 class="consultation_title">КОНСУЛЬТАЦИЯ ДЛЯ НОВЫХ КЛИЕНТОВ</h2>
+                </div>
+                <div class="consultation_form_block">
+                    <form class="consultation_form" action="#" method="POST">
+                        <div class="consult_form">
+                            <label class="number" for="phone">Номер телефона:</label>
+                            <input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+
+                        <div class="consult_form">
+                            <label for="email">Почта:</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+
+                        <div class="consult_form">
+                            <label class="fio" for="name">ФИО:</label>
+                            <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
+                        </div>
+
+
+                        <button type="submit" class="btn_abon consultation_btn">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_left">
+                <img src="img/logo.png" alt="" class="footer_logo">
+                <ul class="footer_ul">О нас
+                    <li class="footer_li">Тренировки</li>
+                    <li class="footer_li">Абонементы</li>
+                    <li class="footer_li">Отзывы</li>
+                </ul>
+            </div>
+            <ul class="footer_ul">Контакты
+                <li class="footer_li">zkGym@mail.ru</li>
+                <li class="footer_li">+7 (999) 999-99-99</li>
+                <li class="footer_li">Россия, Москва</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

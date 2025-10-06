@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.register-window {
+    background: #fff;
+    max-width: 1040px;
+    margin: 40px auto;
+    padding: 41px 70px 100px 70px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    text-align: center;
+}
+.register-window h2 {
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.form-input {
+    width: 100%;
+    margin-bottom: 42px;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 42px;
+    background: #E8E8E8;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+.form-row {
+    position: relative;
+}
+.form-row .send-code {
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    background: none;
+    border: none;
+    color: #b9b9b9;
+    font-size: 14px;
+    cursor: pointer;
+}
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #1fe592 0%, #49a6fc 100%);
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 3px 12px 0 rgba(73,166,252,0.25);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+.register-btn:active {
+    opacity: 0.8;
+}
+.links {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #b9b9b9;
+}
+.links a {
+    color: #b9b9b9;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.register-window h2 {
+    color: black;
+}
+
+.btn_reg {
+    background: linear-gradient(95.37deg, #21D084 -0.37%, #4AB3F4 100.81%);
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 39px 42px;
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 3;
+}
+
+.btn_reg::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(95.37deg, #21D084 -0.37%, #4AB3F4 100.81%);
+    filter: blur(20px);
+    opacity: 1;
+    z-index: -1;
+}
+
+.btn_reg:hover {
+    scale: 1.1;
+}
+
+.btn_reg:active {
+    scale: 0.85;
+}
+
+.register-window h2 {
+    font-size: 64px;
+}

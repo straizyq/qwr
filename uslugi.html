@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дополнительные услуги</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/abonent.css">
+    <link rel="stylesheet" href="css/uslugi.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu_logo">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <nav class="menu_links">
+                <a href="index.html" class="menu_link">Главная</a>
+                <a href="auth.html" class="menu_link">Фото зала</a>
+                <a href="auth.html" class="menu_link">Контакты</a>
+                <a href="abonent.html" class="menu_link">Абонементы</a>
+                <a href="" class="menu_link">Отзывы</a>
+            </nav>
+            <div class="menu_right">
+                <a href="profile.html" class="menu_link">Профиль</a>
+                <button class="btn">Стать членом клуба</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="abonents">
+            <div class="container">
+                <h2 class="abonents_title uslugi_title">Дополнительные услуги <span>ZK GYM</span></h2>
+                <div class="subscriptions">
+                    <div class="subscription">
+                        <img src="img/smaiv.png" alt="" class="uslugi_photo">
+                        <h2 class="uslugi_sub_title">Андрей Смаiв</h2>
+                        <ul> Достижения:
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Жим лёжа: 320кг</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">МСМК по стритлифтингу</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Отличная форма</li>
+                        </ul>
+
+                        <button class="btn_abon btn_1 trainer">Записаться</button>
+                    </div>
+
+                    <div class="subscription">
+                        <img src="img/spartak.png" alt="" class="uslugi_photo">
+                        <h2 class="uslugi_sub_title">Спартак</h2>
+                        <ul> Достижения:
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">КМС по кикбоксингу</li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Успешная карбера фитнес-тренера и
+                                блогера
+                            </li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Ведет марафоны похудения</li>
+                        </ul>
+                        <button class="btn_abon btn_2 trainer">Записаться</button>
+                    </div>
+
+                    <div class="subscription">
+                        <img src="img/pekka.png" alt="" class="uslugi_photo">
+                        <h2 class="uslugi_sub_title">Мiнi Пекка</h2>
+                        <ul> Достижения:
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Победа на Siberian Power Show
+                            </li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Успешный блогер
+                            </li>
+                            <li><img src="img/galochka.png" alt="" class="li_galochka">Отличная форма</li>
+                        </ul>
+                        <button class="btn_abon btn_3 trainer">Записаться</button>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="massage">
+            <div class="container">
+                <div class="massage_block">
+                    <h2 class="massage_title">ЛУЧШИЙ МАССАЖ В ВАШЕЙ ЖИЗНИ</h2>
+                    <ul>
+                        <li>Релаксационный</li>
+                        <li>Спортивный</li>
+                        <li>Лечебный</li>
+                        <li>Косметический</li>
+                    </ul>
+                    <button class="btn_abon btn_uslugi massage_btn">Записаться</button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="popup_trainer">
+            <div class="date_time">
+                
+            </div>
+        </div> -->
+
+
+        <div class="booking-container">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="date">Выберите дату</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="input-group">
+                    <label for="time">Выберите время</label>
+                    <input type="time" id="time" name="time">
+                </div>
+            </div>
+            <button class="btn_abon popup_btn">Записаться</button>
+        </div>
+
+
+
+        <div class="booking-popup">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="date">Выберите дату</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="input-group inp_time">
+                    <label for="time">Выберите время</label>
+                    <input type="time" id="time" name="time">
+                </div>
+            </div>
+            <div class="select-group">
+                <label for="massage-type">Вид массажа</label>
+                <select id="massage-type" name="massage-type">
+                    <option value="" disabled selected>Выберите вид массажа</option>
+                    <option value="relax">Релаксационный</option>
+                    <option value="sport">Спортивный</option>
+                    <option value="medical">Лечебный</option>
+                    <option value="cosmetic">Косметический</option>
+                </select>
+            </div>
+            <button class="btn_abon popup_btn booking_btn">Записаться</button>
+        </div>
+
+
+
+
+
+
+        <footer>
+            <div class="container">
+                <div class="footer_left">
+                    <img src="img/logo.png" alt="" class="footer_logo">
+                    <ul class="footer_ul">О нас
+                        <li class="footer_li">Тренировки</li>
+                        <li class="footer_li">Абонементы</li>
+                        <li class="footer_li">Отзывы</li>
+                    </ul>
+                </div>
+                <ul class="footer_ul">Контакты
+                    <li class="footer_li">zkGym@mail.ru</li>
+                    <li class="footer_li">+7 (999) 999-99-99</li>
+                    <li class="footer_li">Россия, Москва</li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
