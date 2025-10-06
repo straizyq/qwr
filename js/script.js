@@ -31,38 +31,38 @@ const swiper2 = new Swiper('.swiper2', {
     centeredSlidesBounds: false
 });
 
-document.querySelectorAll('.trainer').forEach(button => {
-    button.addEventListener('click', () => {
-        const bookingContainer = document.querySelector('.booking-container');
-        if (bookingContainer) {
-            bookingContainer.style.display = 'block';
-        }
-    });
-});
 
-document.addEventListener('click', (event) => {
-    const bookingContainer = document.querySelector('.booking-container');
-    if (bookingContainer && bookingContainer.style.display === 'block') {
-        // Если клик вне окна и не на кнопке тренера
-        if (!bookingContainer.contains(event.target) && !event.target.classList.contains('trainer')) {
-            bookingContainer.style.display = 'none';
-        }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu_links');
+    const menuLinks = document.querySelectorAll('.menu_links a');
+
+    if (burger && menu) {
+        // Открытие/закрытие по бургеру
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        // Закрытие при клике на пункт меню
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                menu.classList.remove('active');
+            });
+        });
+    } else {
+        console.error('❌ Элементы .burger или .menu_links не найдены!');
+    }
+
+    document.addEventListener('click', (e) => {
+    const isClickInsideMenu = menu.contains(e.target) || burger.contains(e.target);
+    if (!isClickInsideMenu) {
+        burger.classList.remove('active');
+        menu.classList.remove('active');
     }
 });
 
-
-document.querySelector('.massage_btn').addEventListener('click', () => {
-    const bookingPopup = document.querySelector('.booking-popup');
-    if (bookingPopup) {
-        bookingPopup.style.display = 'block';
-    }
 });
 
-document.addEventListener('click', (event) => {
-    const bookingPopup = document.querySelector('.booking-popup');
-    if (bookingPopup && bookingPopup.style.display === 'block') {
-        if (!bookingPopup.contains(event.target) && !event.target.classList.contains('massage_btn')) {
-            bookingPopup.style.display = 'none';
-        }
-    }
-});

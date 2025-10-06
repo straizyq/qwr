@@ -235,5 +235,21 @@ input {
 
 .booking_btn {
     margin-top: 50px;
+}
 
+@media (max-width: 1360px) {
+    .btn_1, .btn_3 {
+        margin-bottom: 20px;
+    }
+
+    .btn_2 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn_uslugi {
+        font-size: 42px;
+        padding: 15px 25px;
+    }
 }

@@ -113,3 +113,114 @@ body {
 .register-window h2 {
     font-size: 64px;
 }
+
+/* Адаптив до 1360px */
+@media (max-width: 1360px) {
+    .register-window {
+        max-width: 800px;
+        padding: 30px 50px 60px 50px;
+    }
+
+    .register-window h2 {
+        font-size: 48px;
+    }
+
+    .form-input {
+        font-size: 32px;
+        padding: 12px 15px;
+    }
+
+    .form-row .send-code {
+        font-size: 12px;
+        top: 25px;
+    }
+
+    .btn_reg {
+        padding: 25px 30px;
+        font-size: 36px;
+    }
+
+    .links {
+        font-size: 12px;
+    }
+}
+
+/* Адаптив до 1024px */
+@media (max-width: 1024px) {
+    .register-window {
+        width: 90%;
+        padding: 20px 30px 40px 30px;
+    }
+
+    .register-window h2 {
+        font-size: 36px;
+    }
+
+    .form-input {
+        font-size: 28px;
+        padding: 10px 12px;
+    }
+
+    .form-row .send-code {
+        top: 20px;
+    }
+
+    .btn_reg {
+        padding: 20px 25px;
+        font-size: 28px;
+    }
+
+    .links {
+        font-size: 11px;
+    }
+}
+
+/* Адаптив до 768px (планшеты) */
+@media (max-width: 768px) {
+    .register-window h2 {
+        font-size: 28px;
+    }
+
+    .form-input {
+        font-size: 24px;
+    }
+
+    .form-row .send-code {
+        top: 18px;
+    }
+
+    .btn_reg {
+        font-size: 24px;
+        padding: 18px 22px;
+    }
+}
+
+/* Адаптив до 480px (мобильные) */
+@media (max-width: 480px) {
+    .register-window {
+        padding: 15px 20px 25px 20px;
+    }
+
+    .register-window h2 {
+        font-size: 22px;
+    }
+
+    .form-input {
+        font-size: 20px;
+        padding: 8px 10px;
+    }
+
+    .form-row .send-code {
+        top: 15px;
+        font-size: 10px;
+    }
+
+    .btn_reg {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .links {
+        font-size: 10px;
+    }
+}

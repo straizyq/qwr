@@ -15,6 +15,7 @@ body {
 .container {
     max-width: 1800px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .menu .container {
@@ -45,9 +46,11 @@ body {
     position: relative;
     cursor: pointer;
     transition: 1s;
+    text-decoration: none;
+    text-align: center;
 }
 
-button::before {
+.btn::before {
     content: '';
     position: absolute;
     top: 0%;
@@ -84,8 +87,10 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../img/smaiv.webp') center/cover no-repeat;
-    background-position: 0 0;
+     background-image: url('../img/smaiv.webp'); /* замени на свой путь */
+    background-position: center center; /* центрирование по горизонтали и вертикали */
+    background-repeat: no-repeat; /* без повторения */
+    background-size: cover;
     opacity: 0.7;
     z-index: -1;
 }
@@ -102,7 +107,10 @@ header {
     font-weight: bold;
     padding: 21px 10px;
     min-width: 278px;
+    position: relative;
+    display: inline-block;
 }
+
 
 .about_title {
     font-size: 64px;
@@ -214,3 +222,283 @@ footer .container {
     scale: 0.85;
 }
 
+/* ===== АДАПТИВНОСТЬ ===== */
+
+/* --- Планшеты (до 1200px) --- */
+@media (max-width: 1200px) {
+    .menu_link {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 5px 16px;
+    }
+
+    .welcome_title {
+        font-size: 48px;
+        max-width: 350px;
+    }
+
+    .about_text {
+        font-size: 28px;
+    }
+
+    .rev_block {
+        max-width: 1000px;
+        margin-left: 0;
+    }
+
+    .slider_img {
+        width: 600px;
+        margin-left: 0;
+    }
+}
+
+/* --- Малые планшеты (до 992px) --- */
+@media (max-width: 992px) {
+    .menu .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu_links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .welcome {
+        padding-top: 400px;
+    }
+
+    .welcome_title {
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .btn_more {
+        display: block;
+        margin: 30px auto;
+        font-size: 30px;
+    }
+
+    .about_text {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: justify;
+    }
+
+    .rev_text {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+}
+
+/* --- Телефоны (до 768px) --- */
+@media (max-width: 768px) {
+    .menu_links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 10;
+    }
+
+    .menu_links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 22px;
+        position: relative;
+    }
+
+    .burger span {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: white;
+        border-radius: 5px;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    .burger span:nth-child(1) { top: 0; }
+    .burger span:nth-child(2) { top: 9px; }
+    .burger span:nth-child(3) { top: 18px; }
+
+    .burger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+
+    .menu_right {
+        display: none;
+    }
+
+    .welcome {
+        padding-top: 250px;
+        text-align: center;
+    }
+
+    .welcome_title {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .btn_more {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+
+    .about_title, .rev_title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .about_text {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .rev_block {
+        margin: 0 auto;
+        padding: 10px 15px 40px 15px;
+    }
+
+    .rev_block_title2 {
+        font-size: 28px;
+    }
+
+    .rev_text {
+        font-size: 18px;
+    }
+
+    .slider_img {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .footer_ul {
+        font-size: 28px;
+    }
+
+    .footer_li {
+        font-size: 18px;
+    }
+
+    .footer_logo {
+        width: 120px;
+    }
+}
+
+/* --- Очень маленькие экраны (до 480px) --- */
+@media (max-width: 480px) {
+    .btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .about_text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .rev_block {
+        padding: 10px;
+    }
+
+    .rev_text {
+        font-size: 16px;
+    }
+}
+
+
+.reviews {
+    width: 100%;
+    padding: 80px 0;
+    background: #000; /* пример — можешь поменять */
+    color: white;
+}
+
+.reviews .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Заголовок */
+.reviews-title {
+    text-align: left;      /* 👉 выравниваем по левому краю */
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-left: 10px;     /* лёгкий отступ от края контейнера */
+}
+
+/* Слайдер */
+.swiper2 {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;        /* центрируем сам слайдер */
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-pagination2 {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.swiper-button-prev2,
+.swiper-button-next2 {
+    color: white;
+}
+
+/* На маленьких экранах */
+@media (max-width: 768px) {
+    .reviews-title {
+        font-size: 28px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .swiper2 {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+}

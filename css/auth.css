@@ -35,5 +35,105 @@
 }
 
 .register-window h2 {
- font-size: 64px;
+    font-size: 64px;
+}
+
+/* Адаптив для экранов до 1360px */
+@media (max-width: 1360px) {
+    .register-window {
+        width: 600px;
+        /* уменьшаем ширину формы */
+        padding: 30px;
+    }
+
+    .form-row .send-code {
+        top: 25px;
+    }
+
+    .register-window h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .form-input {
+        font-size: 32px;
+        padding: 15px 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .btn_auth {
+        padding: 20px 60px;
+        font-size: 36px;
+    }
+
+    .links a {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+/* Адаптив для экранов до 768px */
+@media (max-width: 768px) {
+    .register-window {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .register-window h2 {
+        font-size: 36px;
+    }
+
+    .form-row .send-code {
+        top: 15px;
+    }
+
+    .form-input {
+        font-size: 24px;
+        padding: 10px 8px;
+    }
+
+
+    .btn_auth {
+        padding: 15px 40px;
+        font-size: 28px;
+    }
+
+    .links a {
+        font-size: 18px;
+    }
+}
+
+/* Адаптив для экранов до 480px */
+@media (max-width: 480px) {
+    .register-window h2 {
+        font-size: 28px;
+    }
+
+    .form-input {
+        font-size: 20px;
+    }
+
+    .send-code {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .btn_auth {
+        padding: 12px 30px;
+        font-size: 22px;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
 }

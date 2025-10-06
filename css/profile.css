@@ -66,3 +66,99 @@ ul {
 footer ul {
     padding-left: 40px;
 }
+
+/* Адаптив для экранов до 1360px */
+@media (max-width: 1360px) {
+    .profile_info {
+        flex-direction: column; /* карточка аватара и текстовка вертикально */
+        align-items: center;
+        font-size: 36px;
+        padding: 20px;
+    }
+
+    .ava {
+        margin: 0 0 20px 0; /* убираем большие отступы */
+    }
+
+    .profile_text {
+        align-items: center;
+        text-align: center;
+    }
+
+    li {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .profile_actions {
+        flex-direction: column; /* кнопки сверху вниз */
+        gap: 20px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .red, .log {
+        font-size: 32px;
+    }
+
+    .profile_title {
+        font-size: 36px;
+    }
+}
+
+/* Адаптив для экранов до 768px */
+@media (max-width: 768px) {
+    .profile_info {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    li {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .profile_actions {
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .red, .log {
+        font-size: 24px;
+    }
+
+    .profile_title {
+        font-size: 28px;
+    }
+
+    .ava img {
+        width: 150px; /* уменьшаем аватар */
+        height: auto;
+    }
+}
+
+/* Адаптив для очень маленьких экранов, до 480px */
+@media (max-width: 480px) {
+    li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .profile_actions {
+        gap: 10px;
+    }
+
+    .red, .log {
+        font-size: 20px;
+    }
+
+    .profile_title {
+        font-size: 24px;
+    }
+
+    .ava img {
+        width: 120px;
+    }
+}
