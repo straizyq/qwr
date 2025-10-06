@@ -31,7 +31,7 @@ li {
 }
 
 .massage_block {
-    background-image: url(/img/massage.png);
+    background-image: url(../img/massage.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -235,4 +235,5 @@ input {
 
 .booking_btn {
     margin-top: 50px;
+
 }
