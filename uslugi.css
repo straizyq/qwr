@@ -1,0 +1,238 @@
+.uslugi_title {
+    text-align: center;
+}
+
+ul {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+li {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.uslugi_sub_title {
+    text-align: left;
+    margin: 0;
+}
+
+.btn_1 {
+    margin-top: 120px;
+}
+
+.btn_3 {
+    margin-top: 80px;
+}
+
+.uslugi_photo {
+    margin-top: 34px;
+}
+
+.massage_block {
+    background-image: url(../img/massage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+    border-radius: 20px;
+}
+
+.massage_title {
+    font-size: 64px;
+    font-weight: bold;
+    max-width: 989px;
+}
+
+.massage_block li {
+    list-style-type: none;
+    font-size: 40px;
+    margin-bottom: 26px;
+    font-weight: 500;
+}
+
+.btn_uslugi {
+    font-size: 64px;
+    padding: 30px 65px;
+    margin-bottom: 44px;
+}
+
+.booking-container {
+    width: 900px;
+    background: white;
+    border-radius: 12px;
+    padding: 30px 40px 45px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.input-group label {
+    font-weight: 900;
+    font-size: 48px;
+    color: black;
+    margin-bottom: 8px;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.14);
+}
+
+.input-group input {
+    padding: 10px 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #4AB3F4;
+    box-shadow: 0 0 8px #4AB3F4;
+}
+
+.popup_btn {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 50px;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 190px;
+}
+
+.btn-book:hover {
+    transform: scale(1.1);
+}
+
+.btn-book:active {
+    transform: scale(0.9);
+}
+
+input {
+    margin: 0;
+}
+
+
+.booking-popup {
+    display: none;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 36px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 180, 255, 0.17);
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.input-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 9px;
+    color: #111;
+}
+
+.input-group input {
+    font-size: 20px;
+    padding: 9px 13px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #4AB3F4;
+    box-shadow: 0 0 7px #4AB3F4;
+}
+
+.select-group {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.select-group label {
+    font-size: 32px;
+    font-weight: 900;
+    color: #111;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.select-group select {
+    font-size: 20px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 60%;
+    min-width: 180px;
+}
+
+.btn-submit {
+    margin: 28px auto 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #32cc88 0%, #3dd2ff 100%);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 18px #3dd2ff33;
+    transition: transform 0.18s;
+    display: block;
+}
+
+.btn-submit:hover {
+    transform: scale(1.04);
+}
+
+.inp_time {
+    margin-right: 20px;
+}
+
+.booking-popup label {
+    font-size: 48px;
+}
+
+.booking_btn {
+    margin-top: 50px;
+}
