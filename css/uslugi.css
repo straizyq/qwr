@@ -252,4 +252,101 @@ input {
         font-size: 42px;
         padding: 15px 25px;
     }
+
+}
+
+@media (max-width: 1200px) {
+    .booking-container,
+    .booking-popup {
+        width: 80%;
+        padding: 25px 20px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .inp_time {
+        margin-right: 0;
+    }
+
+    .select-group select {
+        width: 100%;
+    }
+
+    .popup_btn,
+    .booking_btn {
+        font-size: 48px;
+        padding: 15px 40px;
+        margin-top: 30px;
+    }
+
+    .booking-popup label {
+        font-size: 32px;
+    }
+
+    .input-group label {
+        font-size: 24px;
+    }
+
+    .input-group input {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking-container,
+    .booking-popup {
+        width: 90%;
+        padding: 20px 15px;
+    }
+
+    .popup_btn,
+    .booking_btn {
+        font-size: 36px;
+        padding: 12px 30px;
+        margin-top: 20px;
+    }
+
+    .booking-popup label,
+    .input-group label {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-container,
+    .booking-popup {
+        width: 95%;
+        padding: 15px 10px;
+    }
+
+    .popup_btn,
+    .booking_btn {
+        font-size: 28px;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+
+    .booking-popup label,
+    .input-group label {
+        font-size: 18px;
+    }
+
+    .input-group input,
+    .select-group select {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
 }
